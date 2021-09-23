@@ -1,7 +1,7 @@
 const express = require('express')
 var cors = require('cors')
 const config = require('config')
-const Router = require('./api/routes')
+const Router = require('./routes/calculator')
 
 const PORT = config.get('port') || 3000
 const app = express()//init server
