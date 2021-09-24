@@ -17,39 +17,39 @@ router.get(['/', '/:lang'], async (req, res) => {
     }
 })
 
-router.get(['/sum/:num1/:num2/:lang', '/sum/:num1/:num2/'],  (req, res) => {
+router.get(['/sum/:num1/:num2/:lang', '/sum/:num1/:num2/'], (req, res) => {
     let data = calc('sum', req.params.lang, req.params.num1, req.params.num2)
-    if (data.error!=undefined){
+    if (data.error != undefined) {
         res.status(400).set(encoding).end(JSON.stringify(data))
-    }else{
+    } else {
         res.set(encoding).end(JSON.stringify(data))
     }
 })
 
-router.get(['/sub/:num1/:num2', '/sub/:num1/:num2/:lang'],  (req, res) => {
+router.get(['/sub/:num1/:num2', '/sub/:num1/:num2/:lang'], (req, res) => {
     let data = calc('sub', req.params.lang, req.params.num1, req.params.num2)
-    if (data.error!=undefined){
+    if (data.error != undefined) {
         res.status(400).set(encoding).end(JSON.stringify(data))
-    }else{
+    } else {
         res.set(encoding).end(JSON.stringify(data))
     }
 
 })
 
-router.get(['/mul/:num1/:num2', '/mul/:num1/:num2/:lang'],  (req, res) => {
+router.get(['/mul/:num1/:num2', '/mul/:num1/:num2/:lang'], (req, res) => {
     let data = calc('mul', req.params.lang, req.params.num1, req.params.num2)
-    if (data.error!=undefined){
+    if (data.error != undefined) {
         res.status(400).set(encoding).end(JSON.stringify(data))
-    }else{
+    } else {
         res.set(encoding).end(JSON.stringify(data))
     }
 })
 
-router.get(['/div/:num1/:num2', '/div/:num1/:num2/:lang'],  (req, res) => {
+router.get(['/div/:num1/:num2', '/div/:num1/:num2/:lang'], (req, res) => {
     let data = calc('div', req.params.lang, req.params.num1, req.params.num2)
-    if (data.error!=undefined){
+    if (data.error != undefined) {
         res.status(400).set(encoding).end(JSON.stringify(data))
-    }else{
+    } else {
         res.set(encoding).end(JSON.stringify(data))
     }
 })

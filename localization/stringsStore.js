@@ -5,7 +5,7 @@ module.exports = {
         "nameApp": "API Калькулятор",
         "divZero": "Ошибка при делении на ноль"
     },
-    "en":{
+    "en": {
         "errorFirstArg": "Invalid first argument",
         "errorSecondArg": "Invalid second argument",
         "nameApp": "API Calculator",
