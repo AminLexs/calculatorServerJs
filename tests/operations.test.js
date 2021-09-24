@@ -38,3 +38,21 @@ it('should division two numbers', function () {
         )
     }
 })
+it('should power two numbers', function () {
+    let expectedResult = 81
+    let result = operations.pow(3, 4)
+    if (result !== expectedResult) {
+        throw new Error(
+            `Expected ${expectedResult}, but got ${result}`
+        )
+    }
+})
+it('should logarithm two numbers', function () {
+    let expectedResult = 3
+    let result = operations.log(10, 1000)
+    if (expectedResult-result>=0.000001) {
+        throw new Error(
+            `Expected ${expectedResult}, but got ${result}`
+        )
+    }
+})

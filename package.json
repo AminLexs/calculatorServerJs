@@ -1,10 +1,11 @@
 {
-  "name": "knomary",
+  "name": "Calculator",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple calculator",
   "main": "index.js",
   "scripts": {
-    "test": "mocha tests/*.test.js"
+    "test": "mocha tests/*.test.js",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
