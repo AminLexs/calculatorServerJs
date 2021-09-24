@@ -1,5 +1,5 @@
 # Simple calculator
-How to use
+## HOW TO USE
 1) Define port and domain name in config/default.json
    (Default value of port is 5000, domain name - localhost)
    
