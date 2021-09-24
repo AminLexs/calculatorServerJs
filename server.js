@@ -4,9 +4,9 @@ const config = require('config')
 const Router = require('./routes/calculator')
 
 const PORT = config.get('port') || 3000
-const domainName = config.get('domainName') || "localhost"
-const app = express() //initialization server
-app.use(express.urlencoded({extended: true}))
+const domainName = config.get('domainName') || 'localhost'
+const app = express() // initialization server
+app.use(express.urlencoded({ extended: true }))
 app.use(cors({
     origin: `http://${domainName}:${PORT + 1}`,
     credentials: true
