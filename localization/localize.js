@@ -1,9 +1,10 @@
+//Simple localization system
 const locales = require('./stringsStore');
 
 function localize(lang, key) {
     if (lang != undefined)
         return locales[lang][key]
-    else
+    else    //default value of language
         return locales["en"][key]
 }
 

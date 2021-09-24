@@ -1,3 +1,4 @@
+//Simple math operations
 module.exports.sum = function (x, y) {
     return x + y
 }

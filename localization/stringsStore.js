@@ -1,3 +1,4 @@
+//spell checker can be added. that's why file .js, not .json
 module.exports = {
     "ru": {
         "errorFirstArg": "Неверный формат первого аргумента",
